@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    id: 1,
+    item_name: "income",
+    amount: 2500,
+    date: "10/07/2023",
+    from: "employer",
+    category: "income",
+  },
+  {
+    id: 2,
+    item_name: "savings",
+    amount: 2500000,
+    date: "01/02/2023",
+    from: "Stock Dividend",
+    category: "income",
+  },
+  {
+    id: 3,
+    item_name: "co-op-maintaince",
+    amount: 3000,
+    date: "11/01/2023",
+    from: "Sowdum Property MGT",
+    category: "living-expense",
+  },
+  {
+    id: 4,
+    item_name: "groceries",
+    amount: 1200,
+    date: "10/15/2023",
+    from: "Instacart",
+    category: "food",
+  },
+  {
+    id: 5,
+    item_name: "outfit",
+    amount: 2500,
+    date: "10/25/2023",
+    from: "Amiga Bodaga",
+    category: "clothing",
+  },
+];
