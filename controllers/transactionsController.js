@@ -12,17 +12,17 @@ transactions.get("/", (req, res) => {
 
 transactions.get("/:index", (req, res) => {
   const { index } = req.params;
-  console.log("SHOW ROUTE!💵");
-  if (bookmarksData[index]) {
+  console.log(req.params);
+  if (transactionsData[index]) {
     res.status(200).json(transactionssData[index]);
   } else {
-    res.status(404).send("No transactions at that index");
+    res.status(404).send("No 🚫💵transactions🤑🚫 at that index");
   }
 });
 
 transactions.post("/", (req, res) => {
-  console.log("post route is here");
-  console.log(req.body, " <------ this is the req body sent from user");
+  console.log("post route is 🌍here");
+  console.log(req.body, " <------ 🗾this is the req body sent from user");
   transactionsData.push(req.body);
   res.status(200).json({
     status: "OK",
