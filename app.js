@@ -1,7 +1,7 @@
 // DEPENDENCIES
 const express = require("express");
 
-const transactions = require("./controllers/transactionsController");
+const transactions = require("./controllers/transactionsController.js");
 
 // CONFIGURATION
 const app = express();
@@ -16,10 +16,8 @@ app.use("/transactions", transactions);
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("💰Welcome to AC's Budgeting App💵");
+  res.send("💰Welcome to Aisha's Budgeting App💵");
 });
-
-app.use("/transactions", transactionsController);
 
 app.get("*", (req, res) => {
   res.status(404).json({ error: "no page found " });

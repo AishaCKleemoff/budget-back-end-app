@@ -14,7 +14,7 @@ transactions.get("/:index", (req, res) => {
   const { index } = req.params;
   console.log(req.params);
   if (transactionsData[index]) {
-    res.status(200).json(transactionssData[index]);
+    res.status(200).json(transactionsData[index]);
   } else {
     res.status(404).send("No 🚫💵transactions🤑🚫 at that index");
   }
